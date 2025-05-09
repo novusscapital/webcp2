@@ -1,7 +1,7 @@
 let imagem=[
     'src/assets/imagemcarroslideshow1.jpg',
-    'src/assets/imagemcarroslideshow2.jpg',
-    'src/assets/imagemcarroslideshow3.jpg',
+    'src/assets/imagenscarroslideshow2.jpg',
+    'src/assets/imagenscarroslideshow3.jpg',
 ]
 
 let i=0;
