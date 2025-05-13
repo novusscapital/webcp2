@@ -10,11 +10,18 @@ let tempo = 5000;
 
 function slideShow() {
   document.getElementById("image").src = imagens[i];
-  i++;
-  if (i >= imagens.length) {
-    i = 0;
-  }
+  i = (i + 1) % imagens.length;
   setTimeout(slideShow, tempo);
 }
+
+document.getElementById("esquerda").addEventListener("click", () => {
+  i = (i - 1 + imagens.length) % imagens.length;
+  document.getElementById("image").src = imagens[i];
+});
+
+document.getElementById("direita").addEventListener("click", () => {
+  i = (i + 1) % imagens.length;
+  document.getElementById("image").src = imagens[i];
+});
 
 slideShow();

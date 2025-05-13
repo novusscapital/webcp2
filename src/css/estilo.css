@@ -18,6 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header #logo {
@@ -30,10 +31,11 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-  font-size: 14px; 
+  font-size: 14px;
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -47,6 +49,7 @@ nav ul li a:hover {
 }
 
 .banner {
+  position: relative;
   height: 100vh;
   overflow: hidden;
 }
@@ -56,6 +59,38 @@ nav ul li a:hover {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.banner button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#esquerda {
+  left: 5%;
+}
+
+#direita {
+  right: 5%;
 }
 
 footer {
