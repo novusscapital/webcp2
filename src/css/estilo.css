@@ -160,3 +160,97 @@ footer {
 .card:hover {
   transform: scale(1.05);
 }
+
+/*QUIZ*/
+
+#container-quiz{
+  padding: 20px;
+  background: #fff;
+  border-bottom: 5px solid #333 ;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 10vh;
+}
+
+.quiz{
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px #555;
+  width: 60%;
+  background: #333
+}
+.quiz h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: yellowgreen
+}
+#container-perguntas h2{
+  margin-bottom: 20px;
+}
+#container-resposta{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+#proximo{
+    background: rgb(0, 145, 255);
+    color:#fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+}
+#proximo:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#container-resultado {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#container-resultado h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#lista-resultado {
+    list-style: none;
+    padding: 0;
+}
+#lista-resultado li {
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+#lista-resultado li:last-child {
+    border-bottom: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#inicio-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+#inicio-btn:hover {
+    background-color: #1e7e34;
+}

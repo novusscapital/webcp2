@@ -29,20 +29,20 @@
       <h1>ENTENDENDO OS CARROS ELÉTRICOS!</h1>
       <section id="container-perguntas">
         <h2 id="pergunta"></h2>
-        <div id="container-respostas">
-          <input type="text" id="resposta" placeholder="Digite sua resposta">
-        </div>
+        <section id="container-resposta">
+          <div id="resposta"></div>
+        </section>
         <button id="proximo">Próxima Pergunta</button>
         <p id="message"></p>
       </section>
-      <section id="container-resultado" class="hidden">
+      <div id="container-resultado" class="hidden">
         <h2>Resultado do Quiz</h2>
-        <ul id="Lista-resultado"></ul>
+        <ul id="lista-resultado"></ul>
         <button id="inicio-btn">Reiniciar</button>
-      </section>
+      </div>
 
     </div>
-    
+
   </main>
 
 
@@ -56,6 +56,7 @@
     <p>&copy; 2025 - Todos os direitos reservados</p>
   </footer>
 
+  <script src="../src/js/quiz.js"></script>
   <script src="../src/js/script.js"></script>
 </body>
 </html>
