@@ -1,8 +1,8 @@
 let imagens = [
-  '../src/assets/imagemcarroslideshow1.png',
-  '../src/assets/imagemcarroslideshow2.jpg',
-  '../src/assets/imagemcarroslideshow3.jpg',
-  '../src/assets/imagemcarroslideshow4.jpg'
+  'src/assets/imagemcarroslideshow1.png',
+  'src/assets/imagemcarroslideshow2.jpg',
+  'src/assets/imagemcarroslideshow3.jpg',
+  'src/assets/imagemcarroslideshow4.jpg'
 ];
 
 let i = 0;

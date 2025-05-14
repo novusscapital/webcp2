@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz | Novus Energy</title>
   <link rel="stylesheet" href="../src/css/estilo.css" />
-  <title>Quiz</title>
   <script>
     alert("Bem-vindo ao questionário!");
   </script>
 </head>
 <body>
+
   <header>
     <h1 id="logo">NOVUS ENERGY</h1>
     <nav>
@@ -25,32 +26,22 @@
   </header>
 
   <main id="container-quiz">
-    <div class="quiz">
+    <div class="quiz-box">
       <h1>ENTENDENDO OS CARROS ELÉTRICOS!</h1>
       <section id="container-perguntas">
         <h2 id="pergunta"></h2>
-        <section id="container-resposta">
-          <div id="resposta"></div>
-        </section>
+        <section id="container-resposta"></section>
         <button id="proximo">Próxima Pergunta</button>
         <p id="message"></p>
       </section>
+
       <div id="container-resultado" class="hidden">
         <h2>Resultado do Quiz</h2>
         <ul id="lista-resultado"></ul>
         <button id="inicio-btn">Reiniciar</button>
       </div>
-
     </div>
-
   </main>
-
-
-  <section class="banner">
-    <img id="image" alt="banner">
-    <button id="esquerda">&#10094;</button>
-    <button id="direita">&#10095;</button>
-  </section>
 
   <footer>
     <p>&copy; 2025 - Todos os direitos reservados</p>
