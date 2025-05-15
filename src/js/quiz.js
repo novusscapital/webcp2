@@ -67,6 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let acertos = 0;
   const respostas = [];
 
+  containerResultado.classList.add('hidden');
+  reiniciarBotao.classList.add('hidden');
+  containerPerguntas.classList.remove('hidden');
+  listaResultado.innerHTML = '';
+
   function mostrarPergunta() {
     if (perguntas < questoes.length) {
       const atual = questoes[perguntas];
@@ -99,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function mostrarResultado() {
     containerPerguntas.classList.add('hidden');
     containerResultado.classList.remove('hidden');
+    reiniciarBotao.classList.remove('hidden');
     listaResultado.innerHTML = '';
 
     questoes.forEach((q, index) => {
@@ -137,7 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
     acertos = 0;
     respostas.length = 0;
     containerResultado.classList.add('hidden');
+    reiniciarBotao.classList.add('hidden');
     containerPerguntas.classList.remove('hidden');
+    listaResultado.innerHTML = '';
     mostrarPergunta();
   }
 

@@ -12,6 +12,14 @@ body {
   color: white;
 }
 
+body.sobre-page {
+  background-image: url('../../src/assets/planeta_terra.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 header {
   background: #333;
   padding: 20px;
@@ -85,13 +93,8 @@ nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-#esquerda {
-  left: 5%;
-}
-
-#direita {
-  right: 5%;
-}
+#esquerda { left: 5%; }
+#direita { right: 5%; }
 
 .carros-container {
   padding: 60px 20px;
@@ -203,68 +206,9 @@ nav ul li a:hover {
   padding: 40px 20px;
   display: flex;
   justify-content: center;
-}
-
-.quiz {
-  background-color: #1c1c1c;
-  border-radius: 16px;
-  padding: 30px;
-  max-width: 800px;
-  width: 100%;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
-  text-align: center;
-}
-
-.quiz h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.quiz h2 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-#resposta label {
-  display: block;
-  margin: 10px 0;
-  cursor: pointer;
-}
-
-#resposta input {
-  margin-right: 10px;
-}
-
-#message {
-  color: #ff8080;
-  margin-top: 10px;
-}
-
-#container-resultado ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
-  text-align: left;
-}
-
-.hidden {
-  display: none;
-}
-
-footer {
-  text-align: center;
-  background-color: #333;
-  padding: 10px;
-  font-size: 14px;
-  color: #fff;
-}
-
-#container-quiz {
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .quiz-box {
@@ -308,9 +252,9 @@ footer {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  max-width: 320px;  
+  max-width: 320px;
   width: 100%;
-  text-align: center; 
+  text-align: center;
   border: 2px solid transparent;
 }
 
@@ -357,8 +301,45 @@ footer {
   line-height: 1.5;
 }
 
-.hidden {
-  display: none;
+.mensagem-boas-vindas {
+  background-color: #4af29d;
+  color: #111;
+  padding: 12px 48px 12px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  max-width: 700px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mensagem-boas-vindas button {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #111;
+  cursor: pointer;
+  line-height: 1;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 0;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -377,4 +358,8 @@ footer {
   #proximo, #inicio-btn {
     width: 100%;
   }
+}
+
+.hidden {
+  display: none !important;
 }

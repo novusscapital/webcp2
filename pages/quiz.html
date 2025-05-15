@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz | Novus Energy</title>
-  <link rel="stylesheet" href="../src/css/estilo.css" />
-  <script>
-    alert("Bem-vindo ao questionário!");
-  </script>
+  <link rel="stylesheet" href="../src/css/estilo.css">
 </head>
 <body>
 
@@ -18,16 +15,20 @@
         <li><a href="../index.html">HOME</a></li>
         <li><a href="quiz.html">QUIZ</a></li>
         <li><a href="modelos.html">MODELOS</a></li>
-        <li><a href="#">TECNOLOGIAS</a></li>
-        <li><a href="#">OFERTAS</a></li>
-        <li><a href="#">TEST DRIVE</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
       </ul>
     </nav>
   </header>
 
+  <div id="mensagem-boas-vindas" class="mensagem-boas-vindas">
+    Bem-vindo ao questionário!
+    <button onclick="fecharMensagem()">✖</button>
+  </div>
+
   <main id="container-quiz">
     <div class="quiz-box">
       <h1>ENTENDENDO OS CARROS ELÉTRICOS!</h1>
+
       <section id="container-perguntas">
         <h2 id="pergunta"></h2>
         <section id="container-resposta"></section>
@@ -49,5 +50,17 @@
 
   <script src="../src/js/quiz.js"></script>
   <script src="../src/js/script.js"></script>
+
+  <script>
+    setTimeout(() => {
+      const msg = document.getElementById("mensagem-boas-vindas");
+      if (msg) msg.remove();
+    }, 2000);
+
+    function fecharMensagem() {
+      const msg = document.getElementById("mensagem-boas-vindas");
+      if (msg) msg.remove();
+    }
+  </script>
 </body>
 </html>
