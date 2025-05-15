@@ -10,6 +10,7 @@ body {
   background: #111;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  height: 100%;
 }
 
 body.sobre-page {
@@ -18,6 +19,14 @@ body.sobre-page {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.modelos-page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -99,6 +108,7 @@ nav ul li a:hover {
 .carros-container {
   padding: 60px 20px;
   text-align: center;
+  flex: 1;
 }
 
 .carros-container h2 {
@@ -161,6 +171,7 @@ nav ul li a:hover {
   align-items: center;
   padding: 80px 20px;
   background-color: rgba(0, 0, 0, 0.8);
+  flex: 1;
 }
 
 .apresentacao-box {
@@ -356,7 +367,7 @@ footer {
   }
 
   #proximo, #inicio-btn {
-    width: 100%;
+    width: 10%;
   }
 }
 
